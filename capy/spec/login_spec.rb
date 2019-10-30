@@ -2,7 +2,7 @@ describe 'Forms' do
 
     it 'login com sucesso' do
 
-        visit 'https://training-wheels-protocol.herokuapp.com/login'
+        visit 'login'
 
         fill_in 'userId', with: 'stark'
         fill_in 'passId', with: 'jarvis!'
@@ -12,7 +12,7 @@ describe 'Forms' do
     end
 
     it 'Senha incorreta' do
-        visit 'https://training-wheels-protocol.herokuapp.com/login'
+        visit 'login'
 
         fill_in 'userId', with: 'stark'
         fill_in 'passId', with: 'jarvis'
@@ -23,7 +23,7 @@ describe 'Forms' do
     end
 
     it 'Usuario não cadastrado' do
-        visit 'https://training-wheels-protocol.herokuapp.com/login'
+        visit 'login'
 
         fill_in 'userId', with: 'Stark'
         fill_in 'passId', with: 'jarvis!'
