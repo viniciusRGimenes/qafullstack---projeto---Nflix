@@ -1,3 +1,5 @@
+#language: pt
+
 Funcionalidade: Informações Adicionais
     Para que eu possa ver as informações Adicionais
     Sendo um usuario que escolheu um restaurante

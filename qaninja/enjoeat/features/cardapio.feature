@@ -5,9 +5,12 @@ Funcionalidade: Cardapio
     Sendo um usuário que escolheu um restaurante
     Posso acessar seu Cardapio
 
+    @cardapio
     Cenario: Produto
-
-        Quando eu acesso um restaurante
-        Então vejo os produtos disponiveis
-        E vejo a descrição dos produtos
-        E vejo o preço dos produtos
+        
+        Quando eu acesso o restaurante "Burger House"
+        Então vejo os produtos disponiveis:
+            | produto           | descrição                         | preco |
+            | Classic Burger    | O clássico. Não tem como errar.   | R$ 18,50|
+            | Batatas Fritas    | Batatas fritas crocantes          | R$ 5,50|
+            | Refrigerante      | O refri mais gelado da cidade.    | R$ 4,50|
