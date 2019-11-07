@@ -7,6 +7,8 @@ Funcionalidade: Cardapio
     Contexto: Restaurantes
         Dado que acesso a lista de restaurantes
 
+        
+
     @cardapio
     Cenario: Produto
 

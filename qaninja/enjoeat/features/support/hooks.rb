@@ -7,3 +7,7 @@ end
 Before('@Tasty_Treats') do
     visit 'restaurants/tasty-treats/menu'
 end
+
+Before('@green_food') do
+    visit "restaurants/green-food/menu"
+end

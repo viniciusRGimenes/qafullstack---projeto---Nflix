@@ -69,4 +69,26 @@ end
 Quando("eu limpo o meu carrinho") do
     @rest_page.cart.clean
 end
+
+#fechar carrinho
+
+Dado("que eu adicionei os seguintes itens no carrinho") do |table|
+    # table is a Cucumber::MultilineArgument::DataTable
+    pending # Write code here that turns the phrase above into concrete actions
+end
   
+Quando("eu fecho meu carrinho") do
+    pending # Write code here that turns the phrase above into concrete actions
+end
+  
+Então("o valor total de itens deve ser igual {string}") do |string|
+    pending # Write code here that turns the phrase above into concrete actions
+end
+  
+Então("o valor do frete deve ser igual a {string}") do |string|
+    pending # Write code here that turns the phrase above into concrete actions
+end
+  
+Então("o valor total da compra deve ser igual a {string}") do |string|
+    pending # Write code here that turns the phrase above into concrete actions
+end
