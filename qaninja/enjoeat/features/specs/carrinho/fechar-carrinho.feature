@@ -10,7 +10,7 @@ Funcionalidade: Fechar carrinho
             Dado que eu adicionei os seguintes itens no carrinho
         | quantidade | nome                 | descricao                                | subtotal |
         | 1          | Suco Detox           | Suco de couve, cenoura, salsinha e maçã. | R$ 14,90 |
-        | 2          | Hamburguer de Quinoa | Cheio de fribas e muito saboroso.        | R$ 21,00 |
+        | 2          | Hamburger de Quinoa  | Cheio de fibras e muito saboroso.        | R$ 21,00 |
             Quando eu fecho meu carrinho
             Então o valor total de itens deve ser igual "R$ 35,90"
             E o valor do frete deve ser igual a "R$ 8,00"

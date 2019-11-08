@@ -73,22 +73,30 @@ end
 #fechar carrinho
 
 Dado("que eu adicionei os seguintes itens no carrinho") do |table|
-    # table is a Cucumber::MultilineArgument::DataTable
-    pending # Write code here that turns the phrase above into concrete actions
+    @product_list = table.hashes
+    steps %{
+        Quando eu adiciono todos os itens
+    }
 end
   
 Quando("eu fecho meu carrinho") do
-    pending # Write code here that turns the phrase above into concrete actions
+    @rest_page.cart.close
 end
   
-Então("o valor total de itens deve ser igual {string}") do |string|
-    pending # Write code here that turns the phrase above into concrete actions
+Então("o valor total de itens deve ser igual {string}") do |total_items|
+    expect(
+        @order_page.cost_shipping[0]
+    ).to have_text total_items
 end
   
-Então("o valor do frete deve ser igual a {string}") do |string|
-    pending # Write code here that turns the phrase above into concrete actions
+Então("o valor do frete deve ser igual a {string}") do |shipping|
+    expect(
+        @order_page.cost_shipping[1]
+    ).to have_text shipping
 end
   
-Então("o valor total da compra deve ser igual a {string}") do |string|
-    pending # Write code here that turns the phrase above into concrete actions
+Então("o valor total da compra deve ser igual a {string}") do |total_cart|
+    expect(
+        @order_page.cost_shipping[2]
+    ).to have_text total_cart
 end
