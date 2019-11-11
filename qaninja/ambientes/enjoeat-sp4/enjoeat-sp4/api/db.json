@@ -45,7 +45,7 @@
       "name": "Ice Cream",
       "category": "Sorvetes",
       "deliveryEstimate": "1 hora",
-      "rating": 0.0,
+      "rating": 0,
       "imagePath": "assets/img/restaurants/icy.png",
       "about": "A Ice Cream é uma sorveteria inovadora.",
       "hours": "Funciona todos os dias, de 10h às 1h"
@@ -370,5 +370,46 @@
       "restaurantId": "tasty-treats"
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "name": "Vinicius",
+      "email": "vinicius@teste.com",
+      "emailConfirmation": "vinicius@teste.com",
+      "address": "Rua Almeria",
+      "number": "787",
+      "optionalAddress": "bl3 ap85",
+      "paymentOption": "REF",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "detox"
+        },
+        {
+          "quantity": 2,
+          "menuId": "quinoa"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "Vinicius",
+      "email": "vinicius@teste.com",
+      "emailConfirmation": "vinicius@teste.com",
+      "address": "Rua Almeria",
+      "number": "787",
+      "optionalAddress": "bl3 ap85",
+      "paymentOption": "REF",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "detox"
+        },
+        {
+          "quantity": 2,
+          "menuId": "quinoa"
+        }
+      ],
+      "id": 2
+    }
+  ]
 }

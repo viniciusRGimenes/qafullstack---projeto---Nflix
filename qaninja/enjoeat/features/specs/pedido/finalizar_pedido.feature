@@ -13,8 +13,8 @@ Funcionalidade: Finalizar pedido
             | 2          | Hamburger de Quinoa  | Cheio de fibras e muito saboroso.        | R$ 21,00 |
         E informei os meus dados de entrega:
             | nome        | Vinicius           |
-            | email       | Vinicius@teste.com |
-            | rua         | Rua Alemria        |
+            | email       | vinicius@teste.com |
+            | rua         | Rua Almeria        |
             | numero      | 787                |
             | complemento | bl3 ap85           |
         Quando eu finalizo o pedido com "Cartão Refeição"
