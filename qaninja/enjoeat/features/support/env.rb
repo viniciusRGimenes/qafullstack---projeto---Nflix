@@ -18,6 +18,7 @@ Capybara.configure do |config|
             @driver = :selenium_headless
     end
     config.default_driver = @driver
-    config.app_host =  'http://localhost:3000/' #'http://enjoeat-sp4.herokuapp.com/'
+    config.app_host = 'http://enjoeat-sp4.herokuapp.com/' #online
+    #config.app_host = 'http://localhost:3000/'  #local
     config.default_max_wait_time = 15
 end
