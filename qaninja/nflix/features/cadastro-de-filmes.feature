@@ -42,7 +42,7 @@ Funcionalidade: Cadastro de filmes
         ja foi cadastrado em outro momento e o sistema notifica o usuario
         informando que o titulo ja existe
 
-        Dado que "Deadpool 2" é um novo filme
+        Dado que "deadpool2" é um novo filme
         Mas este filme já existe no catalogo
         Quando eu faço o cadastro deste filme
         Então devo ver a notificação "Oops - Este titulo já existe no Ninjaflix."
