@@ -1,17 +1,17 @@
 class LoginPage
-    include Capybara::DSL
-    
-    def go
-        visit "/"
-    end
+  include Capybara::DSL
 
-    def with(email, pass)
-        find("#emailId").set email
-        find("#passId").set pass
-        click_button "Entrar"
-    end
+  def go
+    visit '/'
+  end
 
-    def alert
-        find('.alert').text
-    end
+  def with(email, pass)
+    find('#emailId').set email
+    find('#passId').set pass
+    click_button 'Entrar'
+  end
+
+  def alert
+    find('.alert').text
+  end
 end

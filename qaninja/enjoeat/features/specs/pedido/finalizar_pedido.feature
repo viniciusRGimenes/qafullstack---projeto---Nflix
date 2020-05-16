@@ -22,3 +22,4 @@ Funcionalidade: Finalizar pedido
         """
         Seu pedido foi recebido pelo restaurante. Prepare a mesa que a comida está chegando!
         """
+        

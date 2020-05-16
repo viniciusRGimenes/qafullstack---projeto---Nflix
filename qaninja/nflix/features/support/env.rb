@@ -1,29 +1,29 @@
-require "capybara"
-require "capybara/cucumber"
-require "selenium-webdriver"
-require "os"
+require 'capybara'
+require 'capybara/cucumber'
+require 'selenium-webdriver'
+require 'os'
 
-require_relative "helpers"
+require_relative 'helpers'
 
 World(Helpers)
 
-CONFIG = ENV["ENV_TYPE"]
+CONFIG = ENV['ENV_TYPE']
 
-CONFIG = YAML.load_file(File.join(Dir.pwd,"features/support/config/#{ENV["ENV_TYPE"]}.yaml"))
+CONFIG = YAML.load_file(File.join(Dir.pwd, "features/support/config/#{ENV['ENV_TYPE']}.yaml"))
 
-case ENV["BROWSER"]
-when "firefox"
-    @driver = :selenium
-when "chrome"
-    @driver = :selenium_chrome
-when "headless"
-    @driver = :selenium_chrome_headless
-else 
-    puts "Invalid Browser"
+case ENV['BROWSER']
+when 'firefox'
+  @driver = :selenium
+when 'chrome'
+  @driver = :selenium_chrome
+when 'headless'
+  @driver = :selenium_chrome_headless
+else
+  puts 'Invalid Browser'
 end
 
 Capybara.configure do |config|
-    config.default_driver = @driver
-    config.app_host =  CONFIG["url"]
-    config.default_max_wait_time = 7
+  config.default_driver = @driver
+  config.app_host = CONFIG['url']
+  config.default_max_wait_time = 7
 end
