@@ -11,7 +11,9 @@ pipeline {
             }
         }
         stage("Tests") {
-            sh "echo 'simulando um teste automatizado'"
+            steps{
+                sh "echo 'simulando um teste automatizado'"
+            }
         }
     }
 }
